@@ -28,6 +28,7 @@ class DAQ_Move_ForBeginner(DAQ_Move_base):
                      {'title': 'Axis:', 'name': 'axis', 'type': 'list', 'values': stage_names},
                  ]},
                  {'title': 'Tau:', 'name': 'tau', 'type': 'float', 'value': 7},
+                 {'title': 'Tau2:', 'name': 'tau2', 'type': 'float','min':0,'max':10, 'value': 7}
                  ] + comon_parameters
 
     def __init__(self, parent=None, params_state=None):
